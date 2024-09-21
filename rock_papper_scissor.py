@@ -19,4 +19,11 @@ if user_input == "scissor":
       print("Draw📍")  
   else:
     print("you lose😟")  
-
+if user_input == "paper":
+  if computer == "rock":
+    print("you win🥳")
+  elif computer == user_input:
+      print("Draw📍")  
+  else: 
+    print("you lose😟")  
+    
