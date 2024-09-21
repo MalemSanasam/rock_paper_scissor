@@ -25,16 +25,16 @@ def rps(user_input, computer):
     else: 
       print("you lose😟")  
 def main():
-  items = ("rock", "paper", "scissor")
-  computer = random.choice(items)
-  print("Rock Paper Scissors")
-  user_input = input("You: ").lower().strip()
-  print(f"Computer: {computer.capitalize()}")      
   while True:
+    items = ("rock", "paper", "scissor")
+    computer = random.choice(items)
+    print("🪨  📃 ✂️")
+    print("Wellcome to Rock Paper Scissors Game🎮")
+    user_input = input("You: ").lower().strip()
+    print(f"Computer: {computer.capitalize()}") 
+    rps(user_input, computer)
     exit_option = input("Do you want to continue to play?(y/n) ").lower().strip()
-    if exit_option == "y":
-      rps(user_input, computer)
-    else:
+    if exit_option != "y":
       break
 
 if __name__ == '__main__':
