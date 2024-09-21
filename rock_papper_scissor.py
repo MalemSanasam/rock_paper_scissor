@@ -1,10 +1,19 @@
 import random
-print("Rock Paper Scissors")
-user_input = input("Pick one: ").lower().strip()
-if user_input == "rock" and user_input == "scissor":
-  print("You win🥳")
-  
 items = ("rock", "paper", "scissor")
+computer = random.choice(items)
+print("Rock Paper Scissors")
+user_input = input("You: ").lower().strip()
+print(f"Computer: {computer.capitalize()}")
 
-print(random.choice(items))
+if user_input == "rock":
+  if computer == "scissor":
+    print("you win🥳")
+  elif computer == user_input:
+    print("Draw📍")  
+  else:
+    print("you lose😟")  
+
+  
+
+# print(random.choice(items))
 
