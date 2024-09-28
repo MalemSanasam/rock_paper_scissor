@@ -1,0 +1,2 @@
+
+    items = ("rock", "paper", "scissor")
